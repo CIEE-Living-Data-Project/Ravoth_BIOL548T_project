@@ -36,5 +36,6 @@ sal.t <- sal %>%
 ######################### SAVE TIDIED DATA ######################### 
 # again, will make this a relative file path for final submission
 setwd("/Users/sarahravoth/Desktop/biol548T//Ravoth_BIOL548T_project/data") 
-write.csv()
+write.csv(sal.t, file="tidied_BrucePNP_RedBackedSal_2018_abun.csv")
+
   
