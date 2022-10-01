@@ -10,12 +10,11 @@ groundhog.library(pkg = c("tidyverse", "ggplot2"), date="2022-09-14")
 
 
 ######################### LOAD IN DATA ######################### 
+# record the url to download data from my github repo
+url_sal.t <-"https://raw.githubusercontent.com/CIEE-Living-Data-Project/Ravoth_BIOL548T_project/main/data/tidied_BrucePNP_RedBackedSal_2018_abun.csv"
 
-# note: tried to make a relative file path but it wasn't working--i will figure this out for final submission
-getwd() # check
-setwd("/Users/sarahravoth/Desktop/biol548T//Ravoth_BIOL548T_project/data") # reset
-
-sal.t <-  read.csv("tidied_BrucePNP_RedBackedSal_2018_abun.csv")  # read in data 
+# read data into r 
+sal.t <-read_csv(url_sal.t)
 
 
 ######################### MAKE THE FIGURE ######################### 
@@ -26,8 +25,7 @@ sal.fig <- sal.t %>%
   geom_point(position = "jitter") +  # jitter points so it gives a better image of underlying data
   geom_smooth(method="lm") + # fit lines to data & specify fitting method (lm = linear model)
   theme_classic() + # change plotting theme
-  labs(x="Soil temperature (ºC)", y="Abundance",  # change axis labels
-       caption="Figure 1. Affect of soil temperature on abundance of redback salamanders in Bruce Peninsula National Park using a linear model") +  # name the figure in a caption
+  labs(x="Soil temperature (ºC)", y="Abundance") +  # change axis labels
   scale_color_manual(values=c("#7A7A7A", "#CB0000")) # change colours to match morph
 
 
@@ -36,7 +34,7 @@ sal.fig <- sal.t %>%
 # will change this to a relative file path!
 setwd("/Users/sarahravoth/Desktop/biol548T//Ravoth_BIOL548T_project/outputs")
 
-pdf(paste0("SoilTemp_RedBackedSalMorph_AbundanceFig",Sys.Date(),".pdf" )) # set document to write plots to
+png(paste0("SoilTemp_RedBackedSalMorph_AbundanceFig_",Sys.Date(),".png" )) # set document to write plots to
 sal.fig
 dev.off()
     
