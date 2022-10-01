@@ -45,65 +45,31 @@ This project aims to address two questions qualitatively:
 -   Does abundance of Plethodon cinereus change between 2004 and 2019 in Bruce Peninsula National Park?
 -   Do abundance trends differ between the two P. cinereus colour morphs (redback and leadback)?
 
+Some useful sources (@noël2007, @wiggins2011).
+
 ## Dependent variable
 
 <!-- Describe the key dependent variable(s) specifying how they will be measured. -->
 
-Salamander abundance is the dependent variable. To collect this metric, the number of P. cinereus individuals are counted in multiple plots in Bruce Peninsula National Park.
+Salamander abundance is the dependent variable. To collect this metric, the number of *P. cinereus* individuals are counted in multiple plots in Bruce Peninsula National Park.
 
-## Conditions
-
-<!-- How many and which conditions will participants be assigned to? -->
-
-> [UNDER CONSTRUCTION]
-
-> Example 1: Two conditions: Offering summer program: yes vs no.
-
-> Example 2: 12 conditions in a mixed design lab study. Participants will be assigned to one of four conditions: math training, verbal training, memory task, or control (4 between-subject conditions). Each participant will complete a math test, a verbal test, and a memory test (3 within-subject conditions).
 
 ## Analyses
 
 <!-- Specify exactly which analyses you will conduct to examine the main question/hypothesis. -->
 
-> [UNDER CONSTRUCTION]
-
-> Example: Linear regression predicting the simple average GPA in the semester after the intervention with a dummy variable indicating whether the participant was offered the summer program or not (intention-to-treat analysis). We will also conduct the same regression controlling for simple average GPA during the semester before the intervention, gender, & household income (an 8-point scale ranging from 1 = below \$20,000 and 8 = above \$150,000).
+I will qualitatively examine the effect of soil temperature (in degrees Celsius) on salamander abundance, and see if this relationship differs between the two *P. cinereus* colour morphs. I will visually examine this relationship using a scatterplot fitted with a linear model.
 
 ## Outliers and exclusions
 
 <!-- Describe exactly how outliers will be defined and handled, and your precise rule(s) for excluding observations. -->
 
-> [UNDER CONSTRUCTION]
-
-> Example 1: We will compute the overall mean and standard deviation across all conditions, and winsorize at 2.5 SD above/below the mean. Example 2: We will exclude participants who incorrectly answer at least 2 of our 3 attention check questions. Example 3: We will exclude any participants who complete the survey in less than 30 seconds.
-
-## Sample size
-
-<!-- How many observations will be collected or what will determine sample size? No need to justify decision, but be precise about _exactly_ how the number will be determined. -->
-
-> [UNDER CONSTRUCTION]
-
-> Example: We will offer the program until 500 people have agreed to participate in it or until June 30, 2016 (whichever comes first).
-
-## Other
-
-<!-- Anything else you would like to pre-register? (e.g., secondary analyses, variables collected for exploratory purposes, unusual analyses planned?) -->
-
-> [UNDER CONSTRUCTION]
-
-> Example: We will include a battery of questions for exploratory purposes, including life satisfaction, amount of videogame playing, and family activity. We will also provide an additional survey with 24 questions assessing achievement orientation. We will not report the results of those analyses for the project being pre-registered. NOTE: If you leave this blank it will read 'Nothing else to pre-register.'
+I will only exclude NA values.
 
 ## Study type
 
 This pre-registration is for a class project.
 
-## Some random citations
-
-To force the document to knit with a references section
-
-@noël2007
-
-@wiggins2011
 
 # References
 
