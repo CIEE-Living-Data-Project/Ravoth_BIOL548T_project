@@ -51,37 +51,43 @@ Sarah Ravoth^1^\*
 
 email: ravoth\@zoology.ubc.ca
 
-**Author Contributions:** [ under construction ]
+**Author Contributions:** SR came up with concept, wrote scripts to analyse data, and wrote this manuscript.
 
 **Data Availability:** The data and code that support the findings of this study are openly available from the Government of Canada at <https://open.canada.ca/data/en/dataset/3571474b-8d75-491d-816e-f84677b81a7c>.
 
 **Conflict of Interest statement**
 
-No conflicts of interest
+No conflicts of interest.
 
-**Acknowledgements:** We would like to thank a whole bunch of people.
+**Acknowledgements:** I want to thank salamanders!
 
 \newpage
 
 # Abstract
 
-**Key-words**:
+*Plethodon cinereus* salamanders exist in Bruce Peninsula National Park, Ontario, Canada. I downloaded data to analyse how colour morph affects the relationship between soil temperature (degrees Celsius) and abundance. I produced one figure.
+
+**Key-words**: salamanders, abundance, temperature
 
 \newpage
 
 # Introduction
 
-To force the document to knit with a references section
-
-@noël2007
-
-@wiggins2011
+I used some references in this project (@noël2007, @wiggins2011).
 
 # Methods
 
+I did some funky things in R!
+
 # Results
 
+There is not qualitative relationship between *P. cinereus* abundance and soil temperature for both colour morph (Figure 1).
+
+![](../outputs/SoilTemp_RedBackedSalMorph_AbundanceFig_2022-10-01.png) Figure 1. Effect of soil temperature (degrees Celsuis) on redback salamander abundance in Bruce Peninsula National Park.
+
 # Discussion
+
+Some smart discussion here.
 
 # References
 
@@ -103,6 +109,3 @@ don't use this then they are put at the end of the document by default -->
 \setlength{\leftskip}{-1in}
 \setlength{\parskip}{8pt}
 ```
-\newpage
-
-# Tables
