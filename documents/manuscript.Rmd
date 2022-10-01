@@ -83,7 +83,8 @@ I did some funky things in R!
 
 There is not qualitative relationship between *P. cinereus* abundance and soil temperature for both colour morph (Figure 1).
 
-![](../outputs/SoilTemp_RedBackedSalMorph_AbundanceFig_2022-10-01.png) Figure 1. Effect of soil temperature (degrees Celsuis) on redback salamander abundance in Bruce Peninsula National Park.
+![](../outputs/SoilTemp_RedBackedSalMorph_AbundanceFig_2022-10-01.png) 
+Figure 1. Effect of soil temperature (degrees Celsuis) on redback salamander abundance in Bruce Peninsula National Park.
 
 # Discussion
 
