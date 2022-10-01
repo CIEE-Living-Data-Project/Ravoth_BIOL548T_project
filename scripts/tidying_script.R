@@ -26,10 +26,9 @@ summary(sal)
 sal.t <- sal %>% 
   slice(-1) %>%  # removing first row (the french colnames)
   rename(Redback=`Redback form of Eastern Redback Salamander Count`,       # renaming redback morph abundance column (so shorter)
-         Leadback=`Leadback form of Eastern Redback Salamander Count`) %>%  # renaming leadback morph abundance column (so shorter)
+         Leadback=`Leadback form of Eastern Redback Salamander Count`) %>% # renaming leadback morph abundance column (so shorter)
   pivot_longer(cols=c(Redback, Leadback), names_to="Morph", values_to="count") %>%  # converting table from wide to long format (now, for each survey, there's a column that species morph and count for each morph)
-  as.data.frame() %>%  # previously step converted to a tibble--this is converting back to a dataframe format
-  mutate(count=as.numeric(count)) # change count class from character to numeric (important to properly plot it later)
+  as.data.frame()  # previously step converted to a tibble--this is converting back to a dataframe format
 
 
 ######################### SAVE TIDIED DATA ######################### 
