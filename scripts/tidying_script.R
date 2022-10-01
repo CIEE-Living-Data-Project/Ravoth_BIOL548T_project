@@ -23,7 +23,6 @@ summary(sal)
 
 ######################### TIDY DATA ######################### 
 # tidying whole dataset would be a project itself, so i'll just tidy what's necessary for the figure
-colnames(sal)
 sal.t <- sal %>% 
   slice(-1) %>%  # removing first row (the french colnames)
   rename(Redback=`Redback form of Eastern Redback Salamander Count`,       # renaming redback morph abundance column (so shorter)
