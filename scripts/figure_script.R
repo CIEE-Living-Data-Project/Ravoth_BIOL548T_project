@@ -18,10 +18,9 @@ sal.t <-read_csv(url_sal.t)
 
 
 ######################### MAKE THE FIGURE ######################### 
-
 sal.fig <- sal.t %>%
-  filter(count!="NA", Soil.Temperature...C.!="N/A") %>%   # filtered out NAs
-  ggplot(aes(x=as.numeric(Soil.Temperature...C.), y=count, col=Morph)) +  # changed the class for soil temperature from character to numeric (or else doesn't plot properly)--this was plotted on the x axis, abundance plotted on y axis, and points coloured by redback salamander morph
+  filter(count!="NA", `Soil Temperature (°C)`=="N/A") %>%   # filtered out NAs
+  ggplot(aes(x=as.numeric(`Soil Temperature (°C)`), y=count, col=Morph)) +  # changed the class for soil temperature from character to numeric (or else doesn't plot properly)--this was plotted on the x axis, abundance plotted on y axis, and points coloured by redback salamander morph
   geom_point(position = "jitter") +  # jitter points so it gives a better image of underlying data
   geom_smooth(method="lm") + # fit lines to data & specify fitting method (lm = linear model)
   theme_classic() + # change plotting theme
